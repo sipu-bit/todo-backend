@@ -10,8 +10,9 @@ dotenv.config();
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3000",
-  credentials: true
+    origin: ["http://localhost:3000","https://todo-backend-5uyj.onrender.com","https://todo-app-frontend-evc059mmv-sipu-ranas-projects.vercel.app"],
+  credentials: true,
+  methods:["GET","POST","PUT","DELETE"]
 }))
 app.use(cookieParser());
 app.use('/api/user',UserRoutes);
