@@ -10,7 +10,7 @@ dotenv.config();
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:3000","https://todo-backend-5uyj.onrender.com","https://todo-app-frontend-evc059mmv-sipu-ranas-projects.vercel.app"],
+    origin: ["http://localhost:3000","https://todo-backend-5uyj.onrender.com","https://todo-app-frontend-six-blond.vercel.app"],
   credentials: true,
   methods:["GET","POST","PUT","DELETE"]
 }))
